@@ -50,7 +50,11 @@ group :development do
 end
 
 group :test do
-  gem 'capybara'
   gem 'selenium-webdriver'
   gem 'webdrivers'
+end
+
+group :development, :test do
+  gem 'capybara'
+  gem 'rspec-rails'
 end

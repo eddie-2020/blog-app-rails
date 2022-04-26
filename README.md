@@ -9,6 +9,14 @@ This Blog app is a classic example of a blog website. I will be creating a full 
 - View files should include only placehoulders written in plain HTML, e.g:
   - Here is a list of post for a given user
 
+## Milestone-2
+- Add RSpec as a gem to your project.
+- Create a Request spec file for all your controllers.
+- Make sure that for each action you check:
+  - If response status was correct.
+  - If a correct template was rendered
+  - If the response body includes correct placeholder text.
+  
 ## Technologies Used
 * Language (Ruby on Rails)
 * PostgreSQL
