@@ -21,6 +21,8 @@ gem 'stimulus-rails'
 
 gem 'jbuilder'
 
+gem 'bootstrap-sass'
+
 # gem "redis", "~> 4.0"
 
 # gem "kredis"
