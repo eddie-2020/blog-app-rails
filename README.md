@@ -27,7 +27,7 @@ This Blog app is a classic example of a blog website. I will be creating a full 
 
 ## Clone Project
 - STEP 1:
-  - git clone git@github.com:oluyaratosin123/Blog_App_With_Rails.git
+  - git clone `git@github.com:oluyaratosin123/Blog_App_With_Rails.git`
 - STEP 2:
   - `cd Blog_App_With_Rails` in your terminal
 - STEP 3:
