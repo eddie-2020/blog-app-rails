@@ -55,6 +55,24 @@ group :test do
 end
 
 group :development, :test do
-  gem 'capybara'
   gem 'rspec-rails'
 end
+
+# class Post < ApplicationRecord
+#   belongs_to :users, class_name: 'users', foreign_key: 'user_id'
+#   has_many :comments, class_name: 'comments'
+#   has_many :likes, class_name: 'likes'
+# end
+
+# class CreatePosts < ActiveRecord::Migration[7.0]
+#   def change
+#     create_table :posts do |t|
+#       t.string :title
+#       t.text :text
+#       t.integer :comments_counter, :default => 0
+#       t.integer :likes_counter, :default => 0
+
+#       t.timestamps
+#     end
+#   end
+# end
