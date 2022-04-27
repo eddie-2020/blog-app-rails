@@ -17,6 +17,25 @@ This Blog app is a classic example of a blog website. I will be creating a full 
   - If a correct template was rendered
   - If the response body includes correct placeholder text.
   
+## Milestone-3
+- Build your project schema
+  - Create and run the necessary migration files.
+  - Table and column names should match the ERB diagram.
+    - note: photo for users table should be a link to an image
+  - Foreign keys should be included.
+  - All columns that are foreign keys should have a corresponding index.
+
+## Clone Project
+- STEP 1:
+  - git clone git@github.com:oluyaratosin123/Blog_App_With_Rails.git
+- STEP 2:
+  - `cd Blog_App_With_Rails` in your terminal
+- STEP 3:
+  - run `rails server` or `rails s` in your terminal
+- STEP 4:
+  - visit `localhost:3000` on your browser
+> Yeyyy you have the app running **Congratulations** 😅🎉
+
 ## Technologies Used
 * Language (Ruby on Rails)
 * PostgreSQL
