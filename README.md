@@ -25,6 +25,18 @@ This Blog app is a classic example of a blog website. I will be creating a full 
   - Foreign keys should be included.
   - All columns that are foreign keys should have a corresponding index.
 
+## Milestone-4
+You should include some additional methods.
+- Users
+  - A method that returns the 3 most recent posts for a given user.
+- Posts
+  - A method that updates the posts counter for a user.
+  - A method which returns the 5 most recent comments for a given post.
+- Comments
+  - A method that updates the comments counter for a post.
+- Likes
+  - A method that updates the likes counter for a post.
+
 ## Clone Project
 - STEP 1:
   - git clone `git@github.com:oluyaratosin123/Blog_App_With_Rails.git`
