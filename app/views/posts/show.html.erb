@@ -1,3 +1,21 @@
 <div class="container">
-  <h1> Here is a list of posts for a given user </h1> 
+  <section>
+    <div>
+      <h4> <%= @post.title %> by <%= @user.name %> </h4>
+
+      <p> Comments : <%= @post.comments.size %> Likes : </p>
+    </div>
+
+    <div>
+      <p> <%= @post.text %> </p>
+    </div>
+
+    <div>
+      <% @post.five_most_recent_comments.each do |comment| %>
+      <div>
+        <li> <%= comment.author.name %>: <%= comment.text %> </li>
+      </div>
+      <% end %>
+    </div>
+  </section>
 </div>
