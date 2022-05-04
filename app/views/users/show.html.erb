@@ -1,3 +1,44 @@
 <div class="container">
-  <h1> Here is a list of a specific created user </h1>
+  <h2> Users profile number <%= params[:id] %> </h2>
+  <section>
+
+    <article>
+      <img src="<%= @user.photo %>">
+    </article>
+
+    <article>
+      <h1> <%= @user.name %> </h1>
+
+      <p> Number of posts: <%= @user.posts_counter %> </p>
+    </article>
+
+  </section>
+
+  <section>
+    <h2> Bio </h2>
+
+    <p> <%= @user.bio %> </p>
+  </section>
+
+  <section>
+    <% @user.three_most_recent_posts.each do |post| %>
+      <article>
+
+        <%= link_to user_post_path(@user.id, post.id), id: "user_post #{post.id}" do %>
+          <h4> <%= post.title %> </h4>
+        <% end %>
+
+        <p> <%= post.text %> </p>
+        
+        <div>
+          <p> Comments: <%= post.comments_counter %> </p>
+
+          <p> Likes: <%= post.likes_counter %> </p>
+        </div>
+
+      </article>
+    <% end %>
+  </section>
+
+  <button> <%= link_to 'See all posts', user_posts_path(@user) %> </button>
 </div>

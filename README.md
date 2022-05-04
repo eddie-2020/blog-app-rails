@@ -37,6 +37,12 @@ You should include some additional methods.
 - Likes
   - A method that updates the likes counter for a post.
 
+## Milestone-5
+- Implement the design from the sneak peek wireframes.
+  - Styling is nice to have but focus on making sure everything functions first.
+- Use methods that you have created in the [Blog App - processing data in models](https://github.com/microverseinc/curriculum-rails/blob/main/blog-app/projects/Processing_data_model_project.md).
+- Hint: In order to see some posts or comments, you might need to add some data to your database as described [here](https://github.com/microverseinc/curriculum-rails/blob/main/blog-app/projects/Processing_data_model_project.md#use-models-to-insert-data).
+
 ## Clone Project
 - STEP 1:
   - git clone `git@github.com:oluyaratosin123/Blog_App_With_Rails.git`
