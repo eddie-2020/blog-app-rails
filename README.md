@@ -43,6 +43,11 @@ You should include some additional methods.
 - Use methods that you have created in the [Blog App - processing data in models](https://github.com/microverseinc/curriculum-rails/blob/main/blog-app/projects/Processing_data_model_project.md).
 - Hint: In order to see some posts or comments, you might need to add some data to your database as described [here](https://github.com/microverseinc/curriculum-rails/blob/main/blog-app/projects/Processing_data_model_project.md#use-models-to-insert-data).
 
+## Milestone-6
+- Create forms to perform the following functions:
+  - Create a Post on behalf of the current_.user.
+  - Create a comment on behalf of the current_user.
+  
 ## Clone Project
 - STEP 1:
   - git clone `git@github.com:oluyaratosin123/Blog_App_With_Rails.git`

@@ -1,9 +1,9 @@
 <div class="container">
   <section>
     <div>
-      <h4> <%= @post.title %> by <%= @user.name %> </h4>
+      <h4> <%= @post.title %> by <%= @author.name %> </h4>
 
-      <p> Comments : <%= @post.comments.size %> Likes : </p>
+      <p> Comments : <%= @post.comments_counter || 0 %>, Likes : <%= @post.likes_counter || 0 %> </p>
     </div>
 
     <div>
@@ -11,10 +11,26 @@
     </div>
 
     <div>
-      <% @post.five_most_recent_comments.each do |comment| %>
+      <%= form_with url: "#{@post.id}/likes" do |form| %>
+        <%= form.submit "Like" %>
+      <% end %>
+    </div>
+    
+    <div>
+      <% @post.comments.each do |comment| %>
+
       <div>
         <li> <%= comment.author.name %>: <%= comment.text %> </li>
       </div>
+
+      <% end %>
+    </div>
+
+    <div>
+      <%= form_with url: "#{@post.id}/comments", scope: :comment do |form| %>
+        <%= form.text_area :text, placeholder: "Type something here...", row: 14, required: true %>
+        
+        <%= form.submit "Comment" %>
       <% end %>
     </div>
   </section>
