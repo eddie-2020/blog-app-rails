@@ -18,9 +18,12 @@ RSpec.describe Post, type: :model do
     end
 
     it 'should check if the title is more than the maximum characters: 250' do
-      post_queries.title = 'Post title Post title Post title Post title Post title Post title Post title Post title Post title Post title
-      Post title Post title Post title Post title Post title Post title Post title Post title Post title Post title Post title Post title
-      Post title Post title Post title Post title Post title Post title Post title Post title Post title Post title Post title Post title'
+      post_queries.title = 'Post title Post title Post title Post title Post
+      title Post title Post title Post title Post title Post title Post title
+      Post title Post title Post title Post title Post title Post title Post title
+      Post title Post title Post title Post title Post title Post title Post title
+      Post title Post title Post title Post title Post title Post title Post title
+      Post title Post title'
 
       expect(post_queries).to_not be_valid
     end
