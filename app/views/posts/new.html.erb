@@ -1,0 +1,19 @@
+<h2> Add A New Post </h2>
+
+<section>
+    <%= form_with model: @post, url: user_posts_path, scope: :post do |form| %>
+    <div>
+        <%= form.label :title, "Title" %>
+        <%= form.text_field :title, required: true %>
+    </div>
+
+    <div>
+        <%= form.label :text, "What is this post about?" %>
+        <%= form.text_area :text, size: "80x15", required: true %>
+    </div>
+
+    <div>
+        <%= form.submit "Add Post", data: { disable_with: "Adding post..." } %>
+    </div>
+    <% end %>
+</section>

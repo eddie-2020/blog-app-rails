@@ -3,13 +3,13 @@
   <section>
 
     <article>
-      <img src="<%= @user.photo %>">
+      <%= image_tag("") %>
     </article>
 
     <article>
       <h1> <%= @user.name %> </h1>
 
-      <p> Number of posts: <%= @user.posts_counter %> </p>
+      <p> Number of posts: <%= @user.posts_counter || 0 %> </p>
     </article>
 
   </section>
@@ -24,21 +24,19 @@
     <% @user.three_most_recent_posts.each do |post| %>
       <article>
 
-        <%= link_to user_post_path(@user.id, post.id), id: "user_post #{post.id}" do %>
-          <h4> <%= post.title %> </h4>
-        <% end %>
+        <%= link_to post.title, user_post_path(@user.id, post.id) %>
 
         <p> <%= post.text %> </p>
         
         <div>
-          <p> Comments: <%= post.comments_counter %> </p>
+          <p> Comments: <%= post.comments_counter || 0 %> </p>
 
-          <p> Likes: <%= post.likes_counter %> </p>
+          <p> Likes: <%= post.likes_counter || 0 %> </p>
         </div>
 
       </article>
     <% end %>
   </section>
 
-  <button> <%= link_to 'See all posts', user_posts_path(@user) %> </button>
+  <button> <%= link_to 'See all posts', user_posts_path(@user.id) %> </button>
 </div>
