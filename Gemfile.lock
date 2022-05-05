@@ -76,6 +76,9 @@ GEM
       autoprefixer-rails (>= 5.2.1)
       sassc (>= 2.0.0)
     builder (3.2.4)
+    bullet (7.0.1)
+      activesupport (>= 3.0.0)
+      uniform_notifier (~> 1.11)
     childprocess (4.1.0)
     concurrent-ruby (1.1.10)
     crass (1.0.6)
@@ -233,6 +236,7 @@ GEM
     tzinfo-data (1.2022.1)
       tzinfo (>= 1.0.0)
     unicode-display_width (2.1.0)
+    uniform_notifier (1.16.0)
     web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -254,6 +258,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   bootstrap-sass
+  bullet
   debug
   importmap-rails
   jbuilder

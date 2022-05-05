@@ -15,6 +15,8 @@ gem 'importmap-rails'
 
 gem 'turbo-rails'
 
+gem 'bullet'
+
 gem 'rubocop', '>= 1.0', '< 2.0'
 
 gem 'stimulus-rails'

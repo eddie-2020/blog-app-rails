@@ -48,6 +48,20 @@ You should include some additional methods.
   - Create a Post on behalf of the current_.user.
   - Create a comment on behalf of the current_user.
   
+## Mileston-7
+- Add the following validations:
+  - For the User model:
+    - Name must not be blank.
+    - PostsCounter must be an integer greater than or equal to zero.
+  - For the Post model:
+    - Title must not be blank.
+    - Title must not exceed 250 characters.
+    - CommentsCounter must be an integer greater than or equal to zero.
+    - LikesCounter must be an integer greater than or equal to zero.
+- Add unit specs for all of your models' methods and validations.
+- Add flash messages in the create actions in all your controllers.
+- Make sure that the N+1 problem is solved when fetching all posts and their comments for a user.
+
 ## Clone Project
 - STEP 1:
   - git clone `git@github.com:oluyaratosin123/Blog_App_With_Rails.git`
