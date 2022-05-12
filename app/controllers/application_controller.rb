@@ -6,11 +6,11 @@ class ApplicationController < ActionController::Base
   protected
 
   def update_params_access
-    devise_param_sanitizer.permit(:sign_up) do |user|
+    devise_parameter_sanitizer.permit(:sign_up) do |user|
       user.permit(:name, :posts_counter, :surname, :email, :password, :password_confirmation)
     end
 
-    devise_param_sanitizer.permit(:account_update) do |user|
+    devise_parameter_sanitizer.permit(:account_update) do |user|
       user.permit(:name, :surname, :email, :password, :current_password)
     end
   end
