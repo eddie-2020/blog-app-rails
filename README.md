@@ -72,6 +72,48 @@ You should include some additional methods.
   - Can reset password.
 - [Modify the views in devise](https://github.com/heartcombo/devise#configuring-views) for registration and login to match [the wireframes from the Sneak Peek](https://github.com/microverseinc/curriculum-rails/blob/main/blog-app/sneak_peek.md#:~:text=For%20this%20project%20you%20will%20have%20full%20freedom%20in%20terms%20of%20visual%20design%20but%20you%20will%20need%20to%20keep%20the%20following%20wireframes%3A) and your styling.
 
+## Milestone-9
+- Use Capybara to write integration tests for each view in your project.
+- Login page:
+  - I can see the username and password inputs and the "Submit" button.
+  - When I click the submit button without filling in the username and the password, I get a detailed error.
+  - When I click the submit button after filling in the username and the password with incorrect data, I get a detailed error.
+  - When I click the submit button after filling in the username and the password with correct data, I am redirected to the root page.
+- User index page:
+  - I can see the username of all other users.
+  - I can see the profile picture for each user.
+  - I can see the number of posts each user has written.
+  - When I click on a user, I am redirected to that user's show page.
+- user show page:
+  - I can see the user's profile picture.
+  - I can see the user's username.
+  - I can see the number of posts the user has written.
+  - I can see the user's bio.
+  - I can see the user's first 3 posts.
+  - I can see a button that lets me view all of a user's posts.
+  - When I click a user's post, it redirects me to that post's show page.
+  - When I click to see all posts, it redirects me to the user's post's index page.
+- User post index page:
+  - I can see the user's profile picture
+  - I can see the user's username.
+  - I can see the number of posts the user has written.
+  - I can see a post's title.
+  - I can see some of the post's body.
+  - I can see the first comments on a post.
+  - I can see how many comments a post has.
+  - I can see how many likes a post has.
+  - I can see a section for pagination if there are more posts than fit on the view.
+  - When I click on a post, it redirects me to that post's show page.
+- Post show page:
+  - I can see the post's title.
+  - I can see who wrote the post.
+  - I can see how many comments it has.
+  - I can see how many likes it has.
+  - I can see the post body.
+  - I can see the username of each commentor.
+  - I can see the comment each commentor left.
+`NOTE`: Be sure to include integration specs for any other features you may have implemented!
+
 ## Clone Project
 - STEP 1:
   - git clone `git@github.com:oluyaratosin123/Blog_App_With_Rails.git`
