@@ -10,7 +10,7 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
-    @author = User.find(@post.author_id)
+    @author = @post.author
   end
 
   def create
@@ -20,7 +20,7 @@ class PostsController < ApplicationController
     respond_to do |format|
       format.html do
         if @post.save
-          redirect_to user_posts_url(current_user, @posts), notice: 'Post Saved Successfully'
+          redirect_to "/users/#{@post.author.id}/posts/", flash: { alert: 'Post Saved Successfully' }
         else
           render :new, alert: 'Sorry, something went wrong'
         end
